@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran Praktikan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Data Mahasiswa</h1>
+    
+    <form action="#" method="POST">
+        <div class="form-group">
+            <label for="nim_id">NIM: </label>
+            <input type="text" name="nim_input" id="nim_id" placeholder="Input NIM" value="" readonly>
+        </div>
+        
+        <div class="form-group">
+            <label for="nama_id">Nama: </label>
+            <input type="text" name="nama_input" id="nama_id" placeholder="Masukan Nama" value="" readonly>
+        </div>
+        
+        <div class="form-group">
+            <label for="tgl_id">Tgl Lahir (DD-mm-yyyy): </label>
+            <input type="date" name="tgl_input" id="tgl_id" placeholder="Input Password">
+        </div>
+        
+        <legend>Jenis Kelamin :</legend>
+        <div class="form-group">
+            <label for="jk_id">laki laki</label>
+            <input type="radio" name="jk_input" id="laki_laki" value="laki_laki">
+        </div>
+        <div>
+              <label for="wanita">Wanita</label>
+                <input type="radio" name="jk_input" id="wanita" value="Wanita">
+        </div>
+        
+        <div class="form-group">
+            <label for="kritik_saran">alamat di surabaya:</label>
+            <textarea id="kritik_saran" name="kritik_saran" rows="5"></textarea>
+        </div>
+        
+        <div class="form-group">
+            <label for="jp_id">Tinggal di:</label>
+            <select name="jp_input" id="jp_id">
+                <option value="" selected>------Pilih ----- </option>
+                <option value="D3">Rumah(kos)</option>
+                <option value="S1">Rumah Ortu</option>
+                <option value="S2">Rumah Sodara</option>
+                <option value="S3">Rumah Sakit</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label for="hobi">Pilih 2 hobu yang paling disukai</label>
+            <input type="checkbox" id="coding" name="hobi" value="coding">
+            <label for="coding">Coding</label><br>
+
+            <input type="checkbox" id="gaming" name="hobi" value="gaming">
+            <label for="gaming">Gaming</label><br>
+
+            <input type="checkbox" id="reading" name="hobi" value="reading">
+            <label for="reading">Membaca</label>
+        </div>
+        
+        <div class="form-actions">
+            <button type="button" class="btn-cancel">Cancel</button>
+            <button type="submit" class="btn-submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
