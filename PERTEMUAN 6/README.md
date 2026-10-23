@@ -18,9 +18,9 @@ jQuery adalah pustaka (*library*) JavaScript open-source yang dibuat untuk menye
 ---
 
 ### 4. Implementasi Soal 1
-* **File Terkait:** `tp-modul6/soal1.html` & `style1.css`
+* **File Terkait:** `tp-modul6/Template Soal TP/soal1.html` & `style1.css`
 * **Penjelasan:** Program pada `soal1.html` dikembangkan menggunakan fungsi *native* JavaScript (`prompt`) untuk meminta masukan NIM dan Nama dari pengguna saat halaman web pertama kali dimuat. Hasil masukan tersebut kemudian secara otomatis dimasukkan ke dalam elemen input HTML yang berstatus `readonly` melalui manipulasi DOM (`document.getElementById().value`).
 
 ### 5. Implementasi Soal 2
-* **File Terkait:** `tp-modul6/soal2.html` & `style2.css`
+* **File Terkait:** `tp-modul6/Template Soal TP/soal2.html` & `style2.css`
 * **Penjelasan:** Program pada `soal2.html` memanfaatkan pustaka jQuery yang diimpor via CDN. Pustaka ini digunakan untuk menangani *event* klik tombol (`#tombolUngu`, `#tombolBiru`, `#tombolHijau`) guna mengubah warna latar belakang elemen `#kotakWarna` via `.css()`, serta mengatur visibilitas elemen menggunakan metode `.hide()` untuk tombol `#sembunyikanKotak` dan `.show()` untuk tombol `#tampilkanKotak`.
