@@ -1,0 +1,333 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.header {
+    background-color: #dedede;
+    padding: 16px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-title {
+    font-size: 22px;
+}
+
+.header p {
+    font-size: 14px;
+}
+
+.toolbar {
+    background-color: #fff;
+    padding: 12px 25px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toolbar-left,
+.toolbar-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.toolbar button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 9px 13px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.toolbar button img {
+    width: 19px;
+    height: 19px;
+}
+
+.toolbar input {
+    padding: 9px 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 22px 25px;
+}
+
+.layout_kanan-sidebar {
+    width: 35%;
+    flex-shrink: 0;
+    height: 100vh;
+    background-color: green;
+}
+
+.main-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.header-letter {
+    background-color: #343a40;
+    color: #fff;
+    padding: 14px 15px;
+}
+
+.header-letter h2 {
+    font-size: 17px;
+}
+
+.letter {
+    position: relative;
+    min-height: 92px;
+    margin-top: 10px;
+    margin-right: 5px;
+    padding: 15px;
+    background-color: #fff;
+    border-left: 4px solid #343a40;
+    border-radius: 4px;
+}
+
+.letter-info {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding-right: 100px;
+}
+
+.letter-icon {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+.letter-description strong {
+    font-size: 14px;
+}
+
+.letter-description p {
+    margin-top: 5px;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.letter-date,
+.letter-time {
+    position: absolute;
+    right: 10px;
+    font-size: 11px;
+    color: #555;
+}
+
+.letter-date {
+    top: 13px;
+}
+
+.letter-time {
+    top: 30px;
+}
+
+.dashboard-tab {
+    padding: 13px 18px;
+    background-color: #f39c12;
+    border-bottom: 4px solid #e67e22;
+    color: #fff;
+    font-weight: bold;
+}
+
+.create-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 18px 0;
+}
+
+.create-buttons button {
+    cursor: pointer;
+    background-color: #fff;
+    padding: 12px 25px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cards {
+    display: flex;
+    gap: 14px;
+}
+
+.card {
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.card-body {
+    min-height: 120px;
+    padding: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-icon {
+    font-size: 43px;
+}
+
+.card-number {
+    text-align: right;
+}
+
+.card-number h2 {
+    font-size: 30px;
+    margin-bottom: 4px;
+}
+
+.card-number p {
+    font-size: 13px;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 14px;
+    background-color: rgba(255, 255, 255, 0.25);
+    font-size: 13px;
+}
+
+.follow-up {
+    background-color: #28a745;
+}
+
+.incoming {
+    background-color: #0879c9;
+}
+
+.disposition {
+    background-color: #dc3545;
+}
+
+.todo {
+    margin-top: 24px;
+}
+
+.todo-header {
+    padding: 14px 16px;
+    background-color: #6f42c1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.todo-header h3 {
+    color: #fff;
+    font-size: 17px;
+}
+
+.todo-search {
+    display: flex;
+}
+
+.todo-search input {
+    width: 190px;
+    padding: 9px 10px;
+    border: none;
+    outline: none;
+}
+
+.todo-search button {
+    padding: 8px 12px;
+    border: none;
+    background-color: #eee;
+    cursor: pointer;
+}
+
+.todo-content {
+    padding: 35px 15px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.todo-content p {
+    color: #555;
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .layout_kanan-sidebar,
+    .main-content {
+        width: 100%;
+    }
+
+    .cards {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        flex-basis: 45%;
+    }
+
+    .toolbar {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 14px;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .toolbar {
+        padding: 12px 14px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .card {
+        flex-basis: auto;
+    }
+
+    .todo-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .todo-search,
+    .todo-search input {
+        width: 100%;
+    }
+}
